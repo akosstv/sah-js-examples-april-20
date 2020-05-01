@@ -29,7 +29,7 @@ $('#remove').click(function () {
     $('p:last-child').remove();
 });
 
-//Forth part:
+//Fourth part:
 
 //if (condition that true or false) {
     //cond is true
@@ -37,7 +37,29 @@ $('#remove').click(function () {
     //cond is false
 //}
 
-let colors = ['orange', 'yellow', 'blue', 'lime', 'magenta']
+let colors = ['orange', 'yellow', 'blue', 'lime', 'magenta'];
+
+colors.forEach(function (color) {
+    $('#box-container').append('<div class="box"></div>');
+    $('.box:last-child').css('background', color);
+
+});
+
+for (let i = 0; i < 100; /*i=i+1*/ i++) {
+    console.log(i);
+}
+
+// ugyanaz mint a fenti (colors.forEach) csak loop-pal egyszerűbb
+//$('#box-container').append('<div class="box"></div>');
+//$('.box:last-child').css('background', colors[0]);
+//$('#box-container').append('<div class="box"></div>');
+//$('.box:last-child').css('background', colors[1]);
+//$('#box-container').append('<div class="box"></div>');
+//$('.box:last-child').css('background', colors[2]);
+//$('#box-container').append('<div class="box"></div>');
+//$('.box:last-child').css('background', colors[3]);
+//$('#box-container').append('<div class="box"></div>');
+//$('.box:last-child').css('background', colors[4]);
 
 
 // Single line comment
